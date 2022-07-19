@@ -1,0 +1,246 @@
+body{
+    background-color: lightgoldenrodyellow;
+    /* background-image: url(../images/Jane.jpeg); */
+    color: black;
+    font: normal 16px arial helvetica sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#main-header{
+    background-color: rgb(255, 160, 122);
+    color: teal;
+    font-family: 'sarabun' sans-serif;
+    min-height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar{
+    background-color: lightgoldenrodyellow;
+    overflow: hidden;
+    height: 63px;
+}
+
+.navbar a{
+    float: left;
+    color: teal;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    -webkit-transition: background, padding 500ms ease;
+    -moz-transition: background, padding 500ms ease;
+    -o-transition: background, padding 500ms ease;
+}
+
+.navbar a:hover{
+    background-color: rgb(255, 160, 122);
+    color: black;
+    border: 1px rgb(255, 160, 122) solid;
+    border-radius: 5px;
+    padding: 11px 20px;
+}
+
+.navbar ul{
+    margin: 6px 0 0 0;
+    list-style: none;
+}
+
+.side-nav{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 160, 122);
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: teal;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav a:hover{
+    color: white;
+}
+
+.side-nav .btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#showcase{
+   background-image:url(../images/showcase.jpeg);
+   margin-bottom: 10px;
+   min-height: 200px;
+   background-position: bottom left;
+}
+
+#showcase h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.container{
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    overflow: hidden;
+    transition: margin-Left 0.5s;
+}
+
+.button{
+    background-color: darkslategray;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-transition: background, padding 300ms ease;
+    -moz-transition: background, padding 300ms ease;
+    -o-transition: background, padding 300ms ease;
+}
+
+.button:hover{
+    background: rgb(90, 127, 127);
+    padding: 15px 25px;
+}
+
+.box-1{
+    border: 1px solid darkslategrey;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.box-2{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 800;
+   font-style: oblique;
+   border: 1px darkslategrey solid;
+   border-radius: 15px;
+   padding: 5px;
+   padding-bottom: 15px;
+   margin: 5px 0;
+}
+
+.block{
+    background-color: darkslategray;
+    color: white;
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    border: darkslategrey 1px solid;
+    border-radius: 15px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}
+
+.block-2{
+    background-color: rgb(255, 160, 122);
+    color: teal;
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    border: rgb(255, 160, 122) 1px solid;
+    border-radius: 15px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}
+
+.box-3{
+    font-weight: 800;
+    font-style:italic;
+    margin: 5px 0;
+    border: darkslategrey 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.box-4{
+    border: darkslategrey 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding: 0 20px;
+    border: darkslategrey 2px solid;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background: darkslategrey;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.box-5{
+    border: darkslategrey 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.box-6{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    background-image: url(../images/Jane.jpeg);
+    background-position: top right;
+    background-size: cover;
+    color: white;
+    float: left;
+    width: 85%;
+}
+.box-7{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+    margin: 5px 0;
+    float: right;
+    width: 85%;
+}
+
+
+@media(max-width: 568px){
+    .navbar-li{display: none;}
+    #blocks{width: 100%;}
+    #main{width: 100%;}
+    #sidebar{width: 100%;}
+}
+
+#main-footer{
+    background: lightsalmon;
+    color: teal;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
